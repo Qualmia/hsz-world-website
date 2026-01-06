@@ -7,18 +7,77 @@
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://hsz.world/privacy.html" />
   <style>
-    body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:#0f172a; background:#fff; }
-    .wrap { max-width: 860px; margin: 0 auto; padding: 44px 18px; }
-    a { color: inherit; }
-    h1 { margin: 0 0 10px; letter-spacing:-0.02em; }
-    p, li { line-height: 1.65; color:#334155; }
-    .top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom: 22px; }
-    .nav a { margin-left: 12px; text-decoration:none; color:#475569; font-size:14px; }
-    .nav a:hover { text-decoration: underline; }
-    .box { border: 1px solid #e2e8f0; border-radius: 14px; padding: 14px 16px; background: #f8fafc; margin: 16px 0; }
-    footer { margin-top: 30px; padding-top: 16px; border-top: 1px solid #e2e8f0; font-size:14px; color:#64748b; }
+    body {
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:#0f172a;
+      background:#fff;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 44px 18px;
+    }
+    a {
+      color: inherit;
+    }
+    h1 {
+      margin: 0 0 10px;
+      letter-spacing:-0.02em;
+    }
+    p, li {
+      line-height: 1.65;
+      color:#334155;
+    }
+    .top {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      margin-bottom: 22px;
+    }
+    .nav a {
+      margin-left: 12px;
+      text-decoration:none;
+      color:#475569;
+      font-size:14px;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+    .box {
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: #f8fafc;
+      margin: 16px 0;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 16px;
+      border-top: 1px solid #e2e8f0;
+      font-size:14px;
+      color:#64748b;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .refrens-badge img {
+      height: 38px;
+      width: auto;
+      border-radius: 8px;
+      display: block;
+    }
+    .refrens-badge {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="top">
@@ -38,8 +97,8 @@
 
     <h2>1) Who we are</h2>
     <p>
-      This website is operated by <strong>[Your legal entity / name]</strong> (“we”, “us”).
-      Contact: <a href="mailto:hello@hsz.world">hello@hsz.world</a>.
+      This website is operated by <strong>[Your legal entity / name]</strong> (“we”, “us”).<br/>
+      Contact: <a href="mailto:hello@hsz.world">hello@hsz.world</a>.<br/>
       Address (if applicable): <strong>[Your address]</strong>.
     </p>
 
@@ -60,14 +119,12 @@
 
     <h2>4) Data sharing</h2>
     <p>
-      We do not sell your personal data. We may use trusted service providers (hosting, email, analytics, error logging)
-      who process data on our behalf under appropriate safeguards.
+      We do not sell your personal data. We may use trusted service providers (hosting, email, analytics, error logging) who process data on our behalf under appropriate safeguards.
     </p>
 
     <h2>5) Cookies</h2>
     <p>
-      This site may use essential cookies for basic functionality. If we add non-essential analytics or marketing cookies,
-      we will update this policy and (where required) present a consent banner.
+      This site may use essential cookies for basic functionality. If we add non-essential analytics or marketing cookies, we will update this policy and (where required) present a consent banner.
     </p>
 
     <h2>6) Data retention</h2>
@@ -77,14 +134,12 @@
 
     <h2>7) Your rights</h2>
     <p>
-      Depending on your location, you may have rights to access, correct, delete, or restrict processing of your personal data.
-      Contact us at <a href="mailto:hello@hsz.world">hello@hsz.world</a>.
+      Depending on your location, you may have rights to access, correct, delete, or restrict processing of your personal data. Contact us at <a href="mailto:hello@hsz.world">hello@hsz.world</a>.
     </p>
 
     <h2>8) International transfers</h2>
     <p>
-      If data is processed outside your country, we use appropriate legal mechanisms (such as standard contractual clauses)
-      where required.
+      If data is processed outside your country, we use appropriate legal mechanisms (such as standard contractual clauses) where required.
     </p>
 
     <h2>9) Changes</h2>
@@ -93,9 +148,21 @@
     </p>
 
     <footer>
-      © <span id="y"></span> hsz.world · <a href="/">Home</a> · <a href="/terms.html">Terms</a>
+      <div>© <span id="y"></span> hsz.world</div>
+      <div>
+        <a href="/">Home</a> ·
+        <a href="/terms.html">Terms</a>
+      </div>
+
+      <!-- Refrens reference badge -->
+      <a href="https://www.refrens.com" target="_blank" rel="noopener noreferrer" class="refrens-badge">
+        <img src="/assets/refrens-badge.webp" alt="Accounting Powered by Refrens.com" loading="lazy" />
+      </a>
     </footer>
+
   </div>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
