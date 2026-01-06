@@ -47,9 +47,22 @@
     .faq summary { cursor: pointer; font-weight: 700; }
     .faq p { margin: 10px 0 0; color: var(--muted); }
 
-    footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; display:flex; justify-content:space-between; flex-wrap: wrap; gap: 10px; }
+    footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; display:flex; justify-content:space-between; flex-wrap: wrap; gap: 10px; align-items:center; }
     footer a { color: var(--muted); text-decoration:none; }
     footer a:hover { text-decoration: underline; }
+
+    .refrens-badge img {
+      height: 42px;
+      width: auto;
+      border-radius: 10px;
+      display: block;
+    }
+    .refrens-badge {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      margin-left: 10px;
+    }
 
     @media (max-width: 720px) {
       h1 { font-size: 34px; }
@@ -97,7 +110,6 @@
         </p>
 
         <div class="ctaRow">
-          <!-- Replace with your waitlist / demo link -->
           <a class="btn primary" href="mailto:hello@hsz.world?subject=G.Ai%20Analyst%20-%20Request%20Access">Request access</a>
           <a class="btn ghost" href="#how">See how it works</a>
         </div>
@@ -140,19 +152,16 @@
 
       <section id="faq" class="section faq">
         <h2>FAQ</h2>
-
         <details>
           <summary>Do you store my GA4 data?</summary>
-          <p>By default, the app should only access what’s needed to answer your question. Implementation details may evolve; see the Privacy Policy for the current approach.</p>
+          <p>By default, the app only reads the minimum needed to answer your questions. See Privacy Policy for details.</p>
         </details>
-
         <details>
           <summary>What access do you need?</summary>
-          <p>Read-only access to your GA4 property (so the assistant can query metrics and dimensions).</p>
+          <p>Read-only access to your GA4 property to query metrics and dimensions.</p>
         </details>
-
         <details>
-          <summary>Is this an official Google product?</summary>
+          <summary>Is this a Google product?</summary>
           <p>No. G.Ai Analyst is an independent tool built to work with Google Analytics 4.</p>
         </details>
       </section>
@@ -165,7 +174,13 @@
         <a href="/terms.html">Terms</a> ·
         <a href="mailto:hello@hsz.world">Support</a>
       </div>
+
+      <!-- Reference badge -->
+      <a href="https://www.refrens.com" target="_blank" rel="noopener noreferrer" class="refrens-badge">
+        <img src="/assets/refrens-badge.webp" alt="Accounting Powered by Refrens.com" loading="lazy" />
+      </a>
     </footer>
+
   </div>
 
   <script>
